@@ -10,7 +10,7 @@
 header{
     background-color: #015153;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 header ul{
     display:flex ;
@@ -52,7 +52,8 @@ li{
 
 body{
     height: 100vh;
-    background: url(./pexels-martin-péchy-304664.jpg) no-repeat center center fixed;
+    /* background: url(./pexels-martin-péchy-304664.jpg) no-repeat center center fixed; */
+    background: linear-gradient(to right, #48c7bc, #80fdb0);
     background-size: cover;
 }
 .container{
@@ -123,6 +124,14 @@ form button:hover{
     background-position: left bottom;
     color: #015153;
 }
+#projeto a{
+    color: #015153;
+}
+#projeto a:hover{
+    text-decoration: underline;
+    color: #027274;
+}
+
 @media only screen and (max-width:480px){
     .container .name h1 {
         font-size: 30px;
