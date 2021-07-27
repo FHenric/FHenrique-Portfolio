@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Filipe Henrique</title>
+</head>
+<body>
+    <header>
+        <img src="Logo Cinza e Laranja de Fotografia (2).png" alt="Logotipo">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/filipe-castro-797404211/">Linkedin</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://github.com/FHenric">Github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:ffilipehhenrique@gmail.com">Email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/5581984824666">Whatsapp</a>
+            </li>
+        </ul>
+    
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Filipe Henrique</h1>
+                <h5>Front-end Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-arrow-circle-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer urna neque, malesuada nec venenatis sed, fringilla ac ante. Fusce commodo pulvinar tortor quis pulvinar. Aliquam convallis quis mi vitae euismod.
+                </p>
+            </div>
+
+            <div class="container2">
+                <div>
+                    Deixe seu contato:
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email!! :)">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+    
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation')
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about')
+            display.classList.toggle('active')
+        }
+    </script>
+
+</body>
+</html>
